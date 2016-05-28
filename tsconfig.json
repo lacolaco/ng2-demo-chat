@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "filesGlob": [
+        "src/**/*.ts",
+        "node_modules/@types/**/index.d.ts"
+    ],
+    "files": [
+        "src/app/app.component.ts",
+        "src/app/chat/chat.component.ts",
+        "src/app/chat/chat.model.ts",
+        "src/app/chat/chat.service.ts",
+        "src/app/chat/index.ts",
+        "src/app/chat/utils/name.ts",
+        "src/app/chat/utils/random-message.ts",
+        "src/app/index.ts",
+        "src/main.ts",
+        "node_modules/@types/core-js/index.d.ts",
+        "node_modules/@types/node/index.d.ts"
+    ]
+}

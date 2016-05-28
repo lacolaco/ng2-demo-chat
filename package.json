@@ -1,0 +1,45 @@
+{
+  "name": "ng2-demo-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "prestart": "npm run tsconfig",
+    "build": "webpack",
+    "prebuild": "npm run tsconfig",
+    "tsconfig": "tsconfig -u",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^2.0.0-rc.1",
+    "@angular/compiler": "^2.0.0-rc.1",
+    "@angular/core": "^2.0.0-rc.1",
+    "@angular/http": "^2.0.0-rc.1",
+    "@angular/platform-browser": "^2.0.0-rc.1",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.1",
+    "@angular2-material/button": "^2.0.0-alpha.5",
+    "@angular2-material/core": "^2.0.0-alpha.5",
+    "@angular2-material/icon": "^2.0.0-alpha.5",
+    "@angular2-material/list": "^2.0.0-alpha.5",
+    "@angular2-material/sidenav": "^2.0.0-alpha.5",
+    "@angular2-material/toolbar": "^2.0.0-alpha.5",
+    "core-js": "^2.4.0",
+    "html-loader": "^0.4.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.22-alpha",
+    "@types/node": "^4.0.22-alpha",
+    "ts-loader": "^0.8.2",
+    "tsconfig-cli": "^2.0.0",
+    "typescript": "^1.8.10",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

@@ -1,0 +1,31 @@
+<style>
+    .container {
+        text-align: center;
+    }
+    
+    md-list {
+        text-align: left;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        margin: 10px;
+    }
+    
+    [chatmessage] > .md-list-item {
+        transition: all 0.4s ease-in;
+        opacity: 1;
+    }
+    [chatmessage].enter > .md-list-item {
+        opacity: 0;
+    }
+</style>
+
+<div class="container">
+    <md-list>
+        <md-list-item chatMessage *ngFor="let message of messages; trackBy:trackByID">
+            <img md-list-avatar [src]="message.image" alt="Image of {{message.name}}">
+            <h4 md-line>{{message.name}}</h4>
+            <p md-line>
+                {{message.message}}
+            </p>
+        </md-list-item>
+    </md-list>
+</div>
